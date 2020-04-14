@@ -1,0 +1,27 @@
+ec3531=249; L-Arginine + H2O <-> L-Ornithine + Urea;
+ec2133=88.1;Carbamoyl phosphate + L-Ornithine <-> Orthophosphate + L-Citrulline;
+ec4321=34.5;N-(L-Arginino)succinate <-> Fumarate + L-Arginine;
+ec6345=203;ATP + L-Citrulline + L-Aspartate <-> AMP + Diphosphate + N-(L-Arginino)succinate;
+ec1141339=13.7; R00557 2 L-Arginine + 4 Oxygen + 3 NADPH + 3 H+ <=> 2 Nitric oxide + 2 L-Citrulline + 3 NADP+ + 4 H2O;
+ec1141339=13.7; R00558 L-Arginine + Oxygen + NADPH + H+ <=> N(omega)-Hydroxyarginine + NADP+ + H2O;
+ec1141339=13.7; R00111 NADPH + 2 N(omega)-Hydroxyarginine + 2 Oxygen + H+ <=> NADP+ + 2 Nitric oxide + 2 L-Citrulline + 2 H2O;
+
+v1; M_ATP_c+M_L-Citrulline_c+M_L-Aspartate_c,M_AMP_c+M_Diphosphate_c+M_N-(L-Arginino)succinate_c;
+v2; M_N-(L-Arginino)succinate_c,M_Fumarate_c+M_L-Arginine_c;
+v3; M_Carbamoyl_phosphate_c+M_L-Ornithine_c,M_Orthophosphate_c+M_L-Citrulline_c;
+v4; M_L-Arginine_c+M_H2O_c,M_L-Ornithine_c+M_Urea_c;
+v5; 2*M_L-Arginine_c+4*M_Oxygen_c+3*M_NADPH_c+3*M_H_c,2*M_Nitric_oxide_c+2*M_L-Citrulline_c+3*M_NADP_c+4*M_H2O_c
+b1; M_Carbamoyl_phosphate_c;
+b2; M_L-Aspartate_c;
+b3; M_Fumarate_c;
+b4; M_Urea_c;
+b5; M_ATP_c;
+b6; M_AMP_c;
+b7; M_Diphosphate_c;
+b8; M_Orthophosphate_c;
+b9; M_Oxygen_c;
+b10; M_NADPH_c;
+b11; M_H_c;
+b12; M_Nitric_oxide_c;
+b13; M_NADP_c;
+b14; M_H2O_c
